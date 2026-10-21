@@ -314,7 +314,7 @@ body{margin:0;background:#080f0b}
 .why{margin-top:14px;color:var(--text-secondary)}
 .val .body{margin-top:32px}
 .chart{container-type:inline-size;position:relative;background:var(--surface-panel);border:1px solid var(--border-hairline);padding:32px 36px 28px}
-.chart-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;margin-bottom:52px}
+.chart-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;margin-bottom:36px}
 .chart-title{font-size:16px;font-weight:500;color:var(--text-heading)}
 .chart-note{font-family:var(--font-mono);font-size:12px;color:var(--text-label)}
 .chart-foot{margin-top:24px;padding-top:14px;border-top:1px solid var(--border-hairline-dense);font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-label)}
@@ -345,19 +345,19 @@ body{margin:0;background:#080f0b}
 
 /* Circmar: layer compare */
 .lc{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1fr);gap:0 28px;align-items:end}
-.lc-dim{position:relative;height:320px;width:64px;border-right:1px solid var(--border-hairline);align-self:start}
+.lc-dim{position:relative;height:280px;width:64px;border-right:1px solid var(--border-hairline);align-self:start}
 .lc-dim::before,.lc-dim::after{content:"";position:absolute;right:-1px;width:10px;height:1px;background:var(--text-label)}
 .lc-dim::before{top:0}
 .lc-dim::after{bottom:0}
 .lc-dim span{position:absolute;right:12px;top:50%;transform:translateY(-50%);font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;color:var(--text-secondary);white-space:nowrap;writing-mode:vertical-rl;rotate:180deg;transform-origin:center}
 .lc-col{display:flex;flex-direction:column;align-items:center;min-width:0}
-.lc-plot{position:relative;width:100%;max-width:220px;height:320px;border-bottom:1px solid var(--text-label);display:flex;flex-direction:column;justify-content:flex-end}
-.lc-stack{display:flex;flex-direction:column;height:320px}
+.lc-plot{position:relative;width:100%;max-width:220px;height:280px;border-bottom:1px solid var(--text-label);display:flex;flex-direction:column;justify-content:flex-end}
+.lc-stack{display:flex;flex-direction:column;height:280px}
 .lc-stack > span{display:block;flex:1 1 0}
 .pl-std{background:linear-gradient(var(--c-context),var(--c-context)) 0 0/100% 4px no-repeat,linear-gradient(var(--c-context),var(--c-context)) 0 calc(100% - 3px)/100% 2px no-repeat,linear-gradient(var(--c-context),var(--c-context)) 1% 0/13% calc(100% - 3px) no-repeat,linear-gradient(var(--c-context),var(--c-context)) 50% 0/13% calc(100% - 3px) no-repeat,linear-gradient(var(--c-context),var(--c-context)) 99% 0/13% calc(100% - 3px) no-repeat}
 .pl-new{background:linear-gradient(var(--c-focus),var(--c-focus)) 0 0/100% 2px no-repeat,linear-gradient(var(--c-focus),var(--c-focus)) 1% 0/13% 4px no-repeat,linear-gradient(var(--c-focus),var(--c-focus)) 50% 0/13% 4px no-repeat,linear-gradient(var(--c-focus),var(--c-focus)) 99% 0/13% 4px no-repeat}
 .lc-tag{position:absolute;top:-34px;right:0;font-family:var(--font-mono);font-size:13px;font-weight:500;color:var(--aion-near-black);background:var(--c-focus);padding:4px 8px}
-.lc-val{font-family:var(--font-mono);font-weight:500;font-size:40px;line-height:1;color:var(--text-heading);margin-top:18px}
+.lc-val{font-family:var(--font-mono);font-weight:500;font-size:40px;line-height:1;color:var(--text-heading);margin-top:12px}
 .lc-name{font-size:15px;color:var(--text-list);margin-top:8px;text-align:center}
 .lc-sub{font-family:var(--font-mono);font-size:12px;color:var(--text-label);margin-top:4px;text-align:center}
 .c16{--n:16}
