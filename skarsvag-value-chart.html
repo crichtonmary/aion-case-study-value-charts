@@ -443,6 +443,19 @@ body{margin:0;background:#080f0b}
 
 body{background:var(--surface-page)}
 .cs .val{display:block}
+
+/* Embed sizing: every value chart fills the same Wix iframe. */
+html,body{height:100%}
+body{overflow-x:hidden}
+.cs,.cs .val{height:100%;min-height:100%}
+.chart{display:flex;min-height:100%;flex-direction:column}
+.chart-foot{margin-top:auto}
+@container (max-width:560px){
+.chart{padding:20px 18px 18px}
+.chart-head{margin-bottom:24px}
+.chart-title{font-size:14px;line-height:1.35}
+.chart-foot{padding-top:10px;font-size:9px;line-height:1.45}
+}
 </style>
 </head>
 <body>
