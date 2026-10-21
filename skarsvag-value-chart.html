@@ -411,11 +411,24 @@ body{margin:0;background:#080f0b}
 .chart{padding:24px 20px 20px}
 }
 @container (max-width:560px){
-.hb{--gl:0px;--gr:120px}
+.hb{--gl:0px;--gr:90px}
 .hb-grid{display:none}
 .hb-grp{grid-template-columns:minmax(0,1fr)}
-.sb-seg span{padding:0 8px;font-size:12px}
-.sm{grid-template-columns:minmax(0,1fr)}
+.sb-seg span{padding:0 6px;font-size:11px}
+
+/* Keep the four material-property comparisons compact on narrow screens.
+   The original single-column rule made this chart much taller than the
+   other case-study charts. */
+.sm{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}
+.sm-name{font-size:13px}
+.sm-unit{font-size:9px;margin-bottom:8px}
+.sm-rows{padding-right:64px}
+.sm-rows .hb-row{height:17px}
+.hb-v{left:calc(var(--w) + 5px);gap:4px;font-size:11px}
+.delta{padding:1px 3px;font-size:9px}
+.sub + .sub{margin-top:24px;padding-top:20px}
+.sub-head{margin-bottom:14px}
+.chart-foot{margin-top:16px}
 }
 @media (prefers-reduced-motion:reduce){
 .is-animated *{animation:none !important}
