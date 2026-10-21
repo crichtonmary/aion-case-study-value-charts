@@ -401,13 +401,15 @@ body{background:var(--surface-page)}
 .cs .val{display:block}
 
 /* Embed sizing: every value chart fills the same Wix iframe. */
-html,body{height:100%}
+html,body{height:auto;min-height:0}
 body{overflow-x:hidden}
-.cs,.cs .val{height:100%;min-height:100%}
-.chart{display:flex;min-height:100%;flex-direction:column}
+.cs,.cs .val{height:auto;min-height:0}
+.chart{display:flex;width:100%;min-height:540px;aspect-ratio:16/10;flex-direction:column}
 .chart-head{margin-bottom:36px}
 .chart-foot{margin-top:auto}
-@container (max-width:560px){
+@media (max-width:560px){
+html,body,.cs,.cs .val{height:100%;min-height:100%}
+.chart{height:100%;min-height:100%;aspect-ratio:auto}
 .chart{padding:20px 18px 18px}
 .chart-head{margin-bottom:24px}
 .chart-title{font-size:14px;line-height:1.35}
